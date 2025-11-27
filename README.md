@@ -18,7 +18,7 @@ Main steps :
 2) creates a network between two peptides with a threshold of origin as well as shared peaks count, which allows to have a smaller network, that can thus be visualized (comment to have the histogram for the whole network)
 Steps 3 and 4 must be executed if the .gexf is wanted, not if you want the complete network and the histogram
 4) cleans the network to remove isolated nodes and those who have more than 5 neighbours
-5) Saves the network as a .gexf file, that can be open for example by Gephi (see last part for a quick tutorial)
+5) Saves the network as a .gexf file, that can be open for example by Gephi (see end of readme for a quick tutorial)
 
 Steps 6, 7 and 8 must be executed if to analyse and visualise the histogram of the complete network
 
