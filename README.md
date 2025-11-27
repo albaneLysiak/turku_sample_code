@@ -21,9 +21,10 @@ Steps 3 and 4 must be executed if the .gexf is wanted, not if you want the compl
 5) Saves the network as a .gexf file, that can be open for example by Gephi (see last part for a quick tutorial)
 
 Steps 6, 7 and 8 must be executed if to analyse and visualise the histogram of the complete network
-7) Computation of the number of nodes and edges of the network
-8) Computation of the average degree for target, decoy nodes as well as all the nodes
-9) Visualisation of the connectivity in the network under the form of a histogram
+
+6) Computation of the number of nodes and edges of the network
+7) Computation of the average degree for target, decoy nodes as well as all the nodes
+8) Visualisation of the connectivity in the network under the form of a histogram
 
 ================================================================================
 
