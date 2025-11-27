@@ -17,14 +17,14 @@ Main steps :
 1) cleans the result file to have a smaller set of origins annotations (target / decoy)
 2) creates a network between two peptides with a threshold of origin as well as shared peaks count, which allows to have a smaller network, that can thus be visualized (comment to have the histogram for the whole network)
 Steps 3 and 4 must be executed if the .gexf is wanted, not if you want the complete network and the histogram
-4) cleans the network to remove isolated nodes and those who have more than 5 neighbours
-5) Saves the network as a .gexf file, that can be open for example by Gephi (see end of readme for a quick tutorial)
+3) cleans the network to remove isolated nodes and those who have more than 5 neighbours
+4) Saves the network as a .gexf file, that can be open for example by Gephi (see end of readme for a quick tutorial)
 
-Steps 6, 7 and 8 must be executed if to analyse and visualise the histogram of the complete network
+Steps 5, 6 and 7 must be executed if to analyse and visualise the histogram of the complete network
 
-6) Computation of the number of nodes and edges of the network
-7) Computation of the average degree for target, decoy nodes as well as all the nodes
-8) Visualisation of the connectivity in the network under the form of a histogram
+5) Computation of the number of nodes and edges of the network
+6) Computation of the average degree for target, decoy nodes as well as all the nodes
+7) Visualisation of the connectivity in the network under the form of a histogram
 
 ================================================================================
 
