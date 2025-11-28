@@ -15,7 +15,7 @@ This allowed me to perform a first exploration of the results provided by SpecOM
 Main steps :
 
 1) cleans the result file to have a smaller set of origins annotations (target / decoy)
-2) creates a network between two peptides with a threshold of origin as well as shared peaks count, which allows to have a smaller network, that can thus be visualized (comment to have the histogram for the whole network)
+2) creates a network between two peptides with a threshold of origin as well as shared peaks count, which allows to have a smaller network, that can thus be visualized (comment to have the histogram for the whole network) using the networkx package
 Steps 3 and 4 must be executed if the .gexf is wanted, not if you want the complete network and the histogram
 3) cleans the network to remove isolated nodes and those who have more than 5 neighbours
 4) Saves the network as a .gexf file, that can be open for example by Gephi (see end of readme for a quick tutorial)
@@ -25,14 +25,18 @@ Steps 5, 6 and 7 must be executed if to analyse and visualise the histogram of t
 5) Computation of the number of nodes and edges of the network
 6) Computation of the average degree for target, decoy nodes as well as all the nodes
 7) Visualisation of the connectivity in the network under the form of a histogram
+This histogram allowed me to see that, like many biological networks, this one had scale-free characteristics, with many nodes having a few neighbours, and a few nodes (hubs) with a high degree.
 
 ================================================================================
 
-How to visualize properly the network with Gephi ?
+How to visualise properly the network with Gephi ?
 1) Open network.gexf with Gephi
 2) Go to partition (left panel) -> choose "origin" as attribute -> apply
 3) Layout -> Fruchterman Reingold -> Run
-A few minutes later, the spatialisation algorithm did its job.
+A few minutes later, the spatialisation algorithm did its job, and the network can be visualise. We can guess a link between the density of parts of the network, and quality of identifications, because most of decoy nodes are in lower density areas.
+See "network.gephi" to see the complete spatialised network.
+
+NB : during the step of identification, the target / decoy strategie is often used. Decoy nodes are created, for example by reversing the peptides sequences. These decoy peptides are then considered as false positive identifications, and the score threshold is increaed up to a value allowing to have a given proportion of decoy peptides (generally, 1%). We then consider that target peptides have a similar value of FP rate. This is why, in the network, I consider decoy peptides as "low quality" peptides.
 
 This work allowed to see, in a theoretical context, a link between structures in the network and quality if the identifications.
 
