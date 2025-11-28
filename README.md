@@ -38,5 +38,5 @@ See "network.gephi" to see the complete spatialised network.
 
 NB : during the step of identification, the target / decoy strategie is often used. Decoy nodes are created, for example by reversing the peptides sequences. These decoy peptides are then considered as false positive identifications, and the score threshold is increaed up to a value allowing to have a given proportion of decoy peptides (generally, 1%). We then consider that target peptides have a similar value of FP rate. This is why, in the network, I consider decoy peptides as "low quality" peptides.
 
-This work allowed to see, in a theoretical context, a link between structures in the network and quality if the identifications.
+This work allowed to see, in a theoretical context, a link between structures in the network and quality of the identifications.
 
