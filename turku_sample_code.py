@@ -41,7 +41,7 @@ with open(specOMS_output, "r") as input_file :
 
 nx.set_node_attributes(G, origins, "origin")
 
-#comment the following 6 lines if reduced network version
+#comment the following 6 lines if complete network version
 
 for node in list(G.nodes) :
     if G.degree[node] < 5 :
@@ -110,5 +110,6 @@ plt.grid(color='white', lw = 0.5, axis='x', which = 'both')
 
 plt.rcParams['figure.dpi'] = 300
 plt.rcParams['savefig.dpi'] = 300
+
 
 plt.show()
