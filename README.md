@@ -8,13 +8,13 @@ During my PhD, the aim was to evaluate several strategies to select the best pep
 - theoretical spectra instead of experimental spectra; their sequences are known, which allows to evaluate the results with precision
 
 This Python script taking as input data output data provided by SpecOMS (available at https://mega.nz/file/HVMVBIgQ#8LmaWRo1WRsZNYZM30iNb85HzpCXOSwU0BUPSh74JZI) and creating
-1) a .gexf network from these data, that can be visualised graphically, for example by Gephi (not possible with the whole network)
-2) statistics and histogram for the network (not really relevant for a reduced network)
-This allowed me to perform a first exploration of the results provided by SpecOMS with the human proteome
+1) a .gexf network from these data, that can be visualised graphically, for example by Gephi ; to do such a visualisation, the data has to be reduced
+2) statistics and histogram for the complete network
+This work allowed me to perform a first exploration of the results provided by SpecOMS with the human proteome
 
 Main steps :
 
-1) cleans the result file to have a smaller set of origins annotations (target / decoy)
+1) cleans the result file to have a smaller set of origins annotations (target / decoy, see explanation NB at the end of readme)
 2) creates a network between two peptides with a threshold of origin as well as shared peaks count, which allows to have a smaller network, that can thus be visualized (comment to have the histogram for the whole network) using the networkx package
 Steps 3 and 4 must be executed if the .gexf is wanted, not if you want the complete network and the histogram
 3) cleans the network to remove isolated nodes and those who have more than 5 neighbours
