@@ -7,10 +7,10 @@ During my PhD, the aim was to evaluate several strategies to select the best pep
 - the SpecOMS software, allowing to perform this search with several strategies
 - theoretical spectra instead of experimental spectra; their sequences are known, which allows to evaluate the results with precision
 
-This Python script taking as input data provided by SpecOMS and creating
+This Python script taking as input data provided by SpecOMS (available at https://mega.nz/file/HVMVBIgQ#8LmaWRo1WRsZNYZM30iNb85HzpCXOSwU0BUPSh74JZI) and creating
 1) a .gexf network from these data, that can be visualised graphically, for example by Gephi (not possible with the whole network)
 2) statistics and histogram for the network (not really relevant for a reduced network)
-This allowed me to perform a first exploration of the results provided by SpecOMS with the human proteome.
+This allowed me to perform a first exploration of the results provided by SpecOMS with the human proteome
 
 Main steps :
 
